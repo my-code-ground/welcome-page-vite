@@ -1,0 +1,25 @@
+body {
+    overflow: hidden;
+    cursor: none;
+}
+
+.cursor {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(42, 130, 204, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 500ms, orange 500ms;
+    animation: cursor 500ms infinite;
+}
+
+@keyframes cursor {
+    from {
+        box-shadow: 0 0 4px 0 rgba(0, 255, 232, 0.4);
+    }
+
+    to {
+        box-shadow: 0 0 4px 8px rgba(0, 255, 232, 0.4);
+    }
+}
